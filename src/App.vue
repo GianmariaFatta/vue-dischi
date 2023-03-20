@@ -1,9 +1,16 @@
+
 <script>
+
+import AppHeader from './components/AppHeader.vue';
 export default {
-  name: '',
+  name: 'App',
+  components: { AppHeader }
 };
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <RouterView />
+</template>
 
 <style></style>
