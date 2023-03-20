@@ -18,33 +18,13 @@ export default {
       enctype="multipart/form-data"
       class="row"
       @submit.prevent="sendForm">
-      <div class="col-6">
+      <div class="col-5">
         <div class="mb-3">
           <label for="title" class="form-label">Titolo</label>
           <input type="text" class="form-control" id="title" />
         </div>
       </div>
-      <div class="col-6">
-        <label for="project_img" class="form-label">Immagine:</label>
-        <div class="input-group mb-3">
-          <input
-            type="file"
-            class="form-control rounded-start"
-            id="project_img"
-            name="project_img" />
-        </div>
-      </div>
-      <div class="col-5">
-        <div class="mb-3">
-          <label for="price" class="form-label">Prezzo</label>
-          <input
-            type="number"
-            class="form-control"
-            id="price"
-            max="99,99"
-            min="1" />
-        </div>
-      </div>
+
       <div class="col-4">
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
@@ -65,6 +45,12 @@ export default {
           <label class="form-check-label" for="subscribe"
             >Iscriviti alla newsletter</label
           >
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="description" class="form-label">Decrizione</label>
+          <textarea class="form-control" id="description" rows="3"></textarea>
         </div>
       </div>
       <div class="d-flex justify-content-end mt-4">
