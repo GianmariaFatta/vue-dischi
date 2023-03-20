@@ -11,10 +11,13 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <RouterView />
-  <AppMain />
-  <AppFooter />
+  <div class="d-flex flex-column justify-content-between  vh-100">
+
+    <AppHeader />
+    <RouterView />
+
+    <AppFooter />
+  </div>
 </template>
 
 <style></style>
