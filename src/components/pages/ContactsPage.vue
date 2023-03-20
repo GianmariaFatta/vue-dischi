@@ -2,13 +2,22 @@
 import axios from "axios";
 export default {
   name: "ContactsPage",
+  methods: {
+    sendForm() {
+      console.log("ok");
+    },
+  },
 };
 </script>
 
 <template>
   <div class="container my-5">
     <h1>Contattaci</h1>
-    <form method="post" enctype="multipart/form-data" class="row">
+    <form
+      method="post"
+      enctype="multipart/form-data"
+      class="row"
+      @submit.prevent="sendForm">
       <div class="col-6">
         <div class="mb-3">
           <label for="title" class="form-label">Titolo</label>
@@ -57,6 +66,9 @@ export default {
             >Iscriviti alla newsletter</label
           >
         </div>
+      </div>
+      <div class="d-flex justify-content-end mt-4">
+        <button class="btn btn-success">Invia</button>
       </div>
     </form>
   </div>
