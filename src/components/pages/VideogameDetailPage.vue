@@ -31,7 +31,7 @@ export default {
         .catch(() => {
           this.$router.push({ name: "not-found" });
         })
-        .then(() => {});
+        .then(() => { });
     },
   },
   created() {
@@ -46,10 +46,7 @@ export default {
     <div class="row py-3">
       <div class="col-4">
         <figure class="w-75">
-          <img
-            :src="videogame.image"
-            :alt="videogame.title"
-            class="img-fluid" />
+          <img :src="videogame.image" :alt="videogame.title" class="img-fluid" />
         </figure>
       </div>
       <div class="col-8">
@@ -62,8 +59,7 @@ export default {
             <strong>Prezzo: </strong><span>{{ euroPrice }}</span>
           </div>
           <div class="col">
-            <strong>Disponibile: </strong
-            ><i class="fa-solid" :class="available"></i>
+            <strong>Disponibile: </strong><i class="fa-solid" :class="available"></i>
           </div>
         </div>
       </div>
@@ -71,4 +67,8 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style scoped>
+* {
+  color: white
+}
+</style>

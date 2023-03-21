@@ -24,18 +24,20 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style scoped >
 footer {
     height: 100px;
-    background-color: #dedede;
+    background-color: black;
+
+    color: white
 }
 
 footer a {
     text-decoration: none;
-    color: black
+    color: white
 }
 
 footer a:hover {
-    color: dodgerblue;
+    color: red;
 }
 </style>

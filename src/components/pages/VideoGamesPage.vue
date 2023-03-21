@@ -19,7 +19,7 @@ export default {
 
 <template>
     <div class="container text-center my-5">
-        <h1 class="my-5">VIDEOGAMES</h1>
+        <h1 class="my-5 text-white">VIDEOGAMES</h1>
         <div class="row ">
             <div v-for='videogame in videogames' :key="videogame.title" class="col-4">
                 <div class="card my-3 mx-2">
@@ -27,7 +27,7 @@ export default {
                         <h4 class="">{{ videogame.title }}</h4>
                         <div>
 
-                            <img class='w-25 my-2' :src=videogame.image alt="">
+                            <img class='w-25 mt-2' :src=videogame.image alt="">
                         </div>
                     </div>
                     <div class="card-body d-flex align-items-center">
@@ -55,6 +55,6 @@ export default {
 
 .card:hover {
     transform: scale(1.1);
-    box-shadow: 0 0px 10px red;
+    box-shadow: 0 0px 10px white;
 }
 </style>

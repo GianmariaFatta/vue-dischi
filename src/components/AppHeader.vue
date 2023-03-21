@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg bg-body-trasparent text-white">
+    <div class="container-fluid text-white mt-5">
+      <a class="navbar-brand text-white fs-3 " href="#">MY GAMES</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -15,13 +15,13 @@ export default {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'home' }">Home</router-link>
+            <router-link class="nav-link text-white fs-3" :to="{ name: 'home' }">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'contact' }">Contacts</router-link>
+            <router-link class="nav-link text-white fs-3 " :to="{ name: 'videogames' }">Videogames</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'videogames' }">Videogames</router-link>
+            <router-link class="nav-link text-white fs-3" :to="{ name: 'contact' }">Contacts</router-link>
           </li>
         </ul>
       </div>
@@ -29,4 +29,4 @@ export default {
   </nav>
 </template>
 
-<style></style>
+<style scoped ></style>

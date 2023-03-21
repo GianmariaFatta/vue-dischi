@@ -13,11 +13,7 @@ export default {
 <template>
   <div class="container my-5">
     <h1>Contattaci</h1>
-    <form
-      method="post"
-      enctype="multipart/form-data"
-      class="row"
-      @submit.prevent="sendForm">
+    <form method="post" enctype="multipart/form-data" class="row" @submit.prevent="sendForm">
       <div class="col-5">
         <div class="mb-3">
           <label for="title" class="form-label">Titolo</label>
@@ -28,23 +24,13 @@ export default {
       <div class="col-4">
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="name@example.com" />
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" />
         </div>
       </div>
       <div class="col-3 d-flex align-items-end justify-content-end">
         <div class="form-check form-switch mb-3">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            role="switch"
-            id="subscribe" />
-          <label class="form-check-label" for="subscribe"
-            >Iscriviti alla newsletter</label
-          >
+          <input class="form-check-input" type="checkbox" role="switch" id="subscribe" />
+          <label class="form-check-label" for="subscribe">Iscriviti alla newsletter</label>
         </div>
       </div>
       <div class="col-12">
@@ -60,4 +46,8 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style scoped>
+* {
+  color: white
+}
+</style>
