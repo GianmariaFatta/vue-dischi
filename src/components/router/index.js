@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../pages/HomePage.vue";
 import ContactsPage from "../pages/ContactsPage.vue";
 import VideogameDetailPage from "../pages/VideogameDetailPage.vue";
+import VideoGamesPage from "../pages/VideoGamesPage.vue";
 import NotFoundPage from "../pages/NotFoundPage.vue";
 
 const router = createRouter({
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/videogame/:id",
       name: "videogame-details",
       component: VideogameDetailPage,
+    },
+    {
+      path: "/videogames",
+      name: "videogames",
+      component: VideoGamesPage,
     },
     { path: "/:pathMatch(.*)*", name: "not-found", component: NotFoundPage },
   ],

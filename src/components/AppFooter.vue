@@ -27,5 +27,15 @@ export default {
 <style>
 footer {
     height: 100px;
+    background-color: #dedede;
+}
+
+footer a {
+    text-decoration: none;
+    color: black
+}
+
+footer a:hover {
+    color: dodgerblue;
 }
 </style>

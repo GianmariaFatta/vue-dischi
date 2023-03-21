@@ -14,7 +14,10 @@ export default {
   <div class="d-flex flex-column justify-content-between  vh-100">
 
     <AppHeader />
-    <RouterView />
+    <div class="flex-grow-1">
+
+      <RouterView />
+    </div>
 
     <AppFooter />
   </div>
