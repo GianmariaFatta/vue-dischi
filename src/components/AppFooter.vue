@@ -24,7 +24,7 @@ export default {
     </footer>
 </template>
 
-<style>
+<style scoped>
 footer {
     height: 100px;
     background-color: #dedede;
